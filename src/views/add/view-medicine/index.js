@@ -15,32 +15,35 @@ import {
 
 const Index = props => {
     const usersData = [
-        {id: 0, name: 'John Doe', registered: '2018/01/01', role: 'Guest', status: 'Pending'},
-        {id: 1, name: 'Samppa Nori', registered: '2018/01/01', role: 'Member', status: 'Active'},
-        {id: 2, name: 'Estavan Lykos', registered: '2018/02/01', role: 'Staff', status: 'Banned'},
-        {id: 3, name: 'Chetan Mohamed', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
-        {id: 4, name: 'Derick Maximinus', registered: '2018/03/01', role: 'Member', status: 'Pending'},
-        {id: 5, name: 'Friderik Dávid', registered: '2018/01/21', role: 'Staff', status: 'Active'},
-        {id: 6, name: 'Yiorgos Avraamu', registered: '2018/01/01', role: 'Member', status: 'Active'},
-        {id: 7, name: 'Avram Tarasios', registered: '2018/02/01', role: 'Staff', status: 'Banned'},
-        {id: 8, name: 'Quintin Ed', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
-        {id: 9, name: 'Enéas Kwadwo', registered: '2018/03/01', role: 'Member', status: 'Pending'},
-        {id: 10, name: 'Agapetus Tadeáš', registered: '2018/01/21', role: 'Staff', status: 'Active'},
-        {id: 11, name: 'Carwyn Fachtna', registered: '2018/01/01', role: 'Member', status: 'Active'},
-        {id: 12, name: 'Nehemiah Tatius', registered: '2018/02/01', role: 'Staff', status: 'Banned'},
-        {id: 13, name: 'Ebbe Gemariah', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
-        {id: 14, name: 'Eustorgios Amulius', registered: '2018/03/01', role: 'Member', status: 'Pending'},
-        {id: 15, name: 'Leopold Gáspár', registered: '2018/01/21', role: 'Staff', status: 'Active'},
-        {id: 16, name: 'Pompeius René', registered: '2018/01/01', role: 'Member', status: 'Active'},
-        {id: 17, name: 'Paĉjo Jadon', registered: '2018/02/01', role: 'Staff', status: 'Banned'},
-        {id: 18, name: 'Micheal Mercurius', registered: '2018/02/01', role: 'Admin', status: 'Inactive'},
-        {id: 19, name: 'Ganesha Dubhghall', registered: '2018/03/01', role: 'Member', status: 'Pending'},
-        {id: 20, name: 'Hiroto Šimun', registered: '2018/01/21', role: 'Staff', status: 'Active'},
-        {id: 21, name: 'Vishnu Serghei', registered: '2018/01/01', role: 'Member', status: 'Active'},
-        {id: 22, name: 'Zbyněk Phoibos', registered: '2018/02/01', role: 'Staff', status: 'Banned'},
-        {id: 23, name: 'Aulus Agmundr', registered: '2018/01/01', role: 'Member', status: 'Pending'},
-        {id: 42, name: 'Ford Prefect', registered: '2001/05/25', role: 'Alien', status: 'Don\'t panic!'}
-      ]
+      {MedicineId: 0052, MedicineName:'paracetamol',  ProductionDate: '2021/06/01', Location: 'Mumbai',     status: 'Order Placed'},
+      {MedicineId: 1098, MedicineName:'dapagliflozin',ProductionDate: '2021/05/25', Location: 'Delhi',      status: 'Order Dispatched'},
+      {MedicineId: 2567, MedicineName:'vortioxetine', ProductionDate: '2021/05/15', Location: 'Nagpur',     status: 'Order Dispatched'},
+      {MedicineId: 3365, MedicineName:'ranitidine',   ProductionDate: '2021/04/30', Location: 'Bengaluru',  status: 'Order Received'},
+      {MedicineId: 4142, MedicineName:'ursodiol',     ProductionDate: '2021/06/10', Location: 'Ahmedabad',  status: 'Order Placed'},
+      {MedicineId: 0056, MedicineName:'paracetamol',  ProductionDate: '2021/06/01', Location: 'Mumbai',     status: 'Order Placed'},
+      {MedicineId: 3347, MedicineName:'ranitidine',   ProductionDate: '2021/04/28', Location: 'Bengaluru',  status: 'Order Received'},
+      {MedicineId: 7986, MedicineName:'zalcitabine' , ProductionDate: '2021/05/13', Location: 'Guwahati',   status: 'Order Dispatched'},
+      {MedicineId: 8435, MedicineName:'ketoprofen' ,  ProductionDate: '2021/06/17', Location: 'Kolkata',    status: 'Order Placed'},
+      {MedicineId: 9285, MedicineName:'abatacept'  ,  ProductionDate: '2021/04/26', Location: 'Hyderabad',  status: 'Order Canceled'},
+      {MedicineId: 1075, MedicineName:'simethicone' , ProductionDate: '2021/06/21', Location: 'New Delhi',  status: 'Order Placed'},
+      {MedicineId: 8165, MedicineName:'tamoxifen' ,   ProductionDate: '2021/04/27', Location: 'Jaipur',     status: 'Order Received'},
+      {MedicineId: 6211, MedicineName:'maraviroc',    ProductionDate: '2021/07/01', Location: 'Jamshedpur', status: 'Order Placed'},
+      {MedicineId: 7372, MedicineName:'famotidine' ,  ProductionDate: '2021/07/08', Location: 'Panaji',     status: 'Order Placed'},
+      {MedicineId: 2578, MedicineName:'vortioxetine', ProductionDate: '2021/05/15', Location: 'Nagpur',     status: 'Order Dispatched'},
+      {MedicineId: 0023, MedicineName:'paracetamol',  ProductionDate: '2021/06/01', Location: 'Mumbai',     status: 'Order Placed'},
+      {MedicineId: 1665, MedicineName:'nateglinide',  ProductionDate: '2021/04/29', Location: 'Ahmedabad',  status: 'Order Canceled'},
+      {MedicineId: 0369, MedicineName:'maraviroc',    ProductionDate: '2021/07/01', Location: 'Jamshedpur', status: 'Order Placed'},
+      {MedicineId: 1818, MedicineName:'hydroxyzine',  ProductionDate: '2021/04/23', Location: 'Bhopal',     status: 'Order Received'},
+      {MedicineId: 9998, MedicineName:'venlafaxine',  ProductionDate: '2021/06/30', Location: 'Chennai',    status: 'Order Placed'},
+      {MedicineId: 4569, MedicineName:'perphenazine', ProductionDate: '2021/05/21', Location: 'Lucknow',    status: 'Order Dispatched'},
+      {MedicineId: 9999, MedicineName:'venlafaxine',  ProductionDate: '2021/06/30', Location: 'Chennai',    status: 'Order Placed'},
+      {MedicineId: 1812, MedicineName:'hydroxyzine',  ProductionDate: '2021/04/23', Location: 'Bhopal',     status: 'Order Received'},
+      {MedicineId: 1816, MedicineName:'hydroxyzine',  ProductionDate: '2021/04/23', Location: 'Bhopal',     status: 'Order Received'},
+      {MedicineId: 0066, MedicineName:'paracetamol',  ProductionDate: '2021/06/01', Location: 'Mumbai',     status: 'Order Placed'}
+    ]
+  
+
+
     
       const [details, setDetails] = useState([])
       const [items, setItems] = useState(usersData)
